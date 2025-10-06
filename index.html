@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDoList</title>
+</head>
+<body class="container">
+    <div class="w-75 container my-2 d-flex justify-content-center align-items-center">
+       <form id="form" class="form-control bg-info gap-2">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Task</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                </div>
+                <div class="mb-3">
+                    <label for="Start" class="form-label">Start Time</label>
+                    <input type="datetime-local" class="form-control" id="start" name="Start">
+                </div>
+                <div class="mb-3">
+                    <label for="end" class="form-label">End Time</label>
+                    <input type="datetime-local" class="form-control" id="end" name="end">
+                </div>
+                <button type="button" onclick="Add()" class="btn btn-primary">Add</button>
+            </form>
+    </div>
+    <table class="table table-striped table-bordered">
+        <thead>
+            <th>Name</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th></th>
+        </thead>
+        <tbody id="Data">
+
+        </tbody>
+    </table>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
