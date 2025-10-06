@@ -17,7 +17,7 @@ Vanilla JavaScript (compiled from TypeScript)
 
 Clone the repository:
 
-git clone https://github.com/USERNAME/ToDoList-TS.git
+git clone https://github.com/MohamedAzoz/ToDoList_TS.git
 cd ToDoList-TS
 
 
